@@ -1,0 +1,35 @@
+#paragraph1 {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 13px;
+}
+
+.alert1 {
+text-shadow: 0 1px 0 rgba(255,255,255,0.5);
+background-color: #d9edf7;
+border: 1px solid #bce8f1;
+-webkit-border-radius: 4px;
+-moz-border-radius: 4px;
+border-radius: 4px;
+color: #3a87ad;
+padding: 8px 35px 8px 14px;
+margin-bottom: 18px;
+}
+
+.box {
+	background: #d9edf7;
+	text-align: center;
+}
+
+.box2 {
+	background: #d9edf7;
+}
+
+#email {
+	position: center;
+}
+
+#nav1 {
+	background-color: #999999;
+}
+
+
