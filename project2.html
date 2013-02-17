@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-responsive.css">
+    <link rel="stylesheet" type="text/css" href="css/project2.css">
+
+    <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $("#example").popover();
+      });
+    </script>
+
+  </head>
+  <body>
+
+    <!--nav bar starts-->
+    <div class="container-fluid">
+      <div class="row-fluid">
+        <nav class="navbar navbar-inverse span12">
+          <div class="navbar-inner">
+            <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>  
+            </a>
+            <a class="brand" href="#">Bootstrap Exercise</a>   
+            <div class="nav-collapse">
+              <ul class="nav">
+                <li class="active"><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>  
+                <!--dropdown enabled below-->
+                <li class="dropdown" id="menu1">
+                  <a class="dropdown-toggle" data-toggle="dropdown" href="#menu1">
+                    Dropdown
+                    <b class="caret"></b>
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a href="#">Settings</a></li>
+                    <li><a href="#">Help</a></li>
+                    <li class="divider"></li>
+                    <li><a href="#">Sign out</a></li>
+                  </ul>
+                </li>
+                <li> <div class="span12 offset12"><form class="navbar-form form-search">
+              <input type="text" value="Search" class="input-medium search-query"> 
+            </form></div></li>
+              </ul>  
+            </div> 
+          </div>  
+        </nav> 
+      </div> 
+      <!--nav ends-->
+
+      <!--carousel starts-->
+      <div class="container">
+        <div class="row-fluid well">
+          <div class="span5">
+            <h1>Hello, world!</h1>
+            <p>This is a template for a simple marketing or informational
+            website. It includes a large callout called the hero unit and three supporting pieces of content. Use it as a starting point to create something more unique.</p>  
+            <p><a class="btn btn-primary btn-large">Learn more »</a></p>
+          </div>
+          <div class="span6">
+            <div id="myCarousel" class="carousel">
+              <div class="carousel-inner">
+                <div class="item active"><img src="img/bootstrap-mdo-sfmoma-03.jpg"></div>
+                <div class="item"><img src="img/bootstrap-mdo-sfmoma-01.jpg"></div> 
+                <div class="item"><img src="img/bootstrap-mdo-sfmoma-02.jpg"></div>
+              </div>
+              <a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
+              <a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
+           </div>
+          </div>
+        </div>  
+      </div> 
+    </div>  
+    <!--carousel ends-->
+
+    <!--alert starts-->
+    <div class="container">
+      <div class="row">
+        <div class="span12">
+        <div class="alert alert-info">
+          <strong>Heads up!</strong> This alert box is simply here to give you some information!
+        </div>
+        </div>
+      </div>
+    </div>
+    <!--alert ends-->
+
+
+
+    <div class="container">
+      <div class="row">
+        <div class="span8">
+          <h3>This is what we do</h3>
+          <p id="paragraph1">Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt molit anim id est laborum.</p>
+          <p> <button class="btn" type="button">Launch Demo Model</button></p>
+        </div>  
+        <div class="span4">
+          <h3>Sidebar</h3>
+          <p id="paragraph1">Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermenturn massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.</p>  
+          <a href="#" id="example" class="btn btn-medium" data-toggle="popover" title data-content="And here's some amazing content. It's very engaging, right?" data-original-title="A Title">View a popover</a>
+        </div>
+      </div>  
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="span4">
+          <h4>Who we are</h4>
+          <p id="paragraph1">Lorem ipsum sit arnet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris misi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt molit anim id est laborum.</p>
+          <p> <button class="btn" type="button">Read more</button></p>
+        </div>  
+        <div class="span4">
+          <h4>Who we are</h4>
+          <p id="paragraph1">Lorem ipsum sit arnet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris misi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt molit anim id est laborum.</p>
+          <p> <button class="btn" type="button">Read more</button></p>
+        </div>  
+        <div class="span4">
+          <h4>Who we are</h4>
+          <p id="paragraph1">Lorem ipsum sit arnet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris misi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt molit anim id est laborum.</p>
+          <p> <button class="btn" type="button">Read more</button></p>
+        </div>  
+      </div>
+     </div>
+
+     <div class="container">
+       <div class="row-fluid box2">
+        <div class="span6 offset5">
+         <h5>Sign up for our newsletter</h5></div>
+         <form class="bs-docs-example form-horizontal">
+         <div class="control-group">
+          <div class="span6 offset3"><label class="control-label" for="inputIcon">Email address</label>
+           <div class="controls">
+             <div class="input-prepend">
+               <span class="add-on">
+                 <i class="icon-envelope"></i>
+               </span>
+               <input class="span12 form1" id="inputIcon" type="text"></div> 
+             </div> 
+           </div> 
+         </div> 
+        </form>    
+       </div>
+    </div>
+
+    <div class="container">
+      <hr>
+      <footer>
+        <p>&#169; Company 2013</p>  
+      </footer>  
+    </div> 
+
+  </body>
+</html>
